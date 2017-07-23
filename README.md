@@ -12,7 +12,7 @@
 
 ## Instructions
 
-1. **Build the page in the [image attached](creative.png) using valid HTML/CSS**
+1. **Build the page in the [image attached](./assets/creative.png) using valid HTML/CSS**
 
     - Please build the page so that it has all the features shown in the attached image, using the guidelines below. You are free to add your own creative design to it. If you would like to add additional features or styling, you are encouraged to do so.
 
