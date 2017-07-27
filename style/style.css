@@ -1,0 +1,134 @@
+@font-face{
+    src: url(../fonts/chunkfive.ttf);
+    font-family: 'chunkfive';
+}
+@font-face{
+    src: url(../fonts/MyriadPro-Regular.otf);
+    font-family: 'Myriad';
+}
+
+
+body{
+    background-color: #ada095;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4{
+    font-family: 'chunkfive','Times New Roman', Times, serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #323232;
+    padding-left: 4em;
+}
+a{
+    text-decoration: none;
+    color:#d12f2f ;
+}
+.body-text{
+    font-family: 'Myriad',Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: black;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+.red{
+    color: #d12f2f;
+    
+}
+.rtl{
+    font-size: 1.3em;
+    padding-left: 1.2em;
+}
+nav{
+    background-color: #c9c1b6;
+    width: 100vw;
+    height: 80px;
+    padding: 1em;
+    margin-top: -1em;
+    margin-left: -1em;
+}
+ul{
+    list-style: none;
+    margin-left: 700px;
+    margin-top: -70px;
+    margin-right: 6em;
+
+}
+
+li{
+    font-family: 'chunkfive','Times New Roman', Times, serif;
+    display:inline-block; 
+    font-size: 1.3em;
+    color: #323232;
+
+
+
+}
+nav li {
+    padding-left: 5em;
+}
+
+.titles{
+    padding-top: 3em;
+    padding-bottom: 2   em;
+}
+
+.red_text{
+    color: #693d3a;
+    cursor: pointer;
+}
+.icon{
+    font-size: 2em;
+    transition: all .5s
+}
+
+ol .focus{
+    font-size: 1.2em;
+    padding-left: 10em;
+    padding-bottom: 4em;
+}
+.text-center{
+    text-align: center;
+}
+
+.move{
+    transition: all .5s;
+}
+.form{
+    background-color: #c9c1b6;
+    font-family: 'Myriad',Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    width: 100%;
+    height: 2em;
+    border-radius: 8px;
+    border-color:#6a5753;
+    border-width: 2px;
+    margin: -10px 0px 20px 0px ;
+}
+.button{
+    width:10vw;
+    float: right;
+    font-family: 'chunkfive','Times New Roman', Times, serif;
+    color: #323232;
+
+}
+footer{
+    background-color: #c9c1b6;
+    width: 100vw;
+    height: 80px;
+    margin-top: 10em;
+    margin-left: -1em;
+    padding: 1em;
+}
+
+ .social_medias{
+    /* padding-left: 20em; */
+     margin-left: 40em; 
+    width: 100%;
+} 
+
+.tw{
+    width: 3%;
+}
