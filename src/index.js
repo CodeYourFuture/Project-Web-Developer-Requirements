@@ -21,7 +21,7 @@ var charcters = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$
 
 var submit = document.getElementById('submit');
 submit.addEventListener('click' , submition);
-
+var form = document.getElementById('form');
 
 function submition(event){
     if(contactName.value.length <= 0){
@@ -35,8 +35,12 @@ function submition(event){
      var Jason ={
      contact :contactName.value,
      emailAddress : email.value,
-    }
+     }
         console.log(JSON.stringify(Jason))
+        form.style.color ='red'
+        form.style.fontFamily = "Myriad"
+        form.style.fontSize = '3em'
+        form.innerHTML = "your form succesfuly submited!";
 
     }
 }
