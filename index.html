@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 Layout</title>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1></h1>
+				<nav>
+					<ul>
+						<li><a href="" class="current">Menu 1</a></li>
+						<li><a href="">Menu 2</a></li>
+						<li><a href="">Menu 3</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="news">
+				<article>
+					<figure>
+						<img src="" alt="" />
+						<figcaption>News #1</figcaption>
+					</figure>
+					<hgroup>
+						<h2>Header #1</h2>
+						<h3>Subheader #1</h3>
+					</hgroup>
+					<p>Paragraph #1</p>
+				</article>    
+				<article>
+					<figure>
+						<img src="" alt="" />
+						<figcaption>News #2</figcaption>
+					</figure>
+					<hgroup>
+						<h2>Header #2</h2>
+						<h3>Subheader #2</h3>
+					</hgroup>
+					<p>Paragraph #2</p>
+				</article>    
+			</section>
+			<aside>
+				<section class="popular-resourses">
+					<h2>Popular Resourses</h2>
+					<a href="">Resourse #1</a>
+					<a href="">Resourse #2</a>
+					<a href="">Resourse #3</a>
+				</section>
+				<section class="contact-details">
+					<h2>Contact</h2>
+					<p>Label Name<br />
+						First line of address<br />
+						Second line of address<br />
+						Third line of address</p>
+				</section>
+			</aside>
+			<form id="form">
+			<fieldset>
+				<legend>Message Form</legend>
+				<label for="name">Username: </label><input type="text" id ="name" maxlength="30"/>
+				<label for="email">Email: </label><input type="text" id="email" maxlength="50"/>
+                <label for="message">Message: </label>
+				<textarea id="message" placeholder="Enter your message..." onkeyup="updateWordCount()"></textarea>
+                <br /><br />
+				<span id="counter">Word count: 0</span>
+				<input type="submit" value="Submit" id="submit"/>
+			</fieldset>
+		</form>
+			<footer>
+				&copy; 2017 Label Name
+			</footer>
+		</div><!-- .wrapper -->
+	</body>
+</html>
