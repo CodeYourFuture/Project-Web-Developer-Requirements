@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CYF SITE </title>
+        <link rel="stylesheet" type="text/css" href="cyfSite.css">
+
+    </head>
+    <body>
+        <h1>CYF</h1>
+        <div class=navBar>
+            <ol>
+                <li><a href="#">Menu1</a></li>
+                <li><a href="#">Menu2</a></li>
+                <li><a href="#">Menu3</a></li>
+            </ol>
+        </div>
+        <h2>About CYF</h2>
+        <h3>What We Do</h3>
+        <p>Cyf is </p>
+        <h4>Our focus</h4>
+        <ul>
+            <li>Interactive</li>
+            <li>Mobile</li>
+            <li>Technology</li>
+        </ul>
+        <p>click here to download a PDF of our recent work</p>
+        <h3>News</h3>
+        <p>Show/Hide news item</p>
+        <h3>More Information</h3>
+        <p>For more information about our about our products and services, please contact us using </br> the form below </p>
+        <p>Items marked * are required fields</p>
+        <form id="form" onsubmit="return validator()"> 
+            <label for="name">contact name *</label><br>
+            <input type="text" id="name" name="contact_name placeholder="Your name.."/><br>
+            <label for="email">contact email *</label><br>
+            <input type="text" id="email" name="contact_email placeholder="Your email.."/><br>
+            <label for="contact">contact phone number</label><br>
+            <input type="text" id="email" name="contact_email placeholder="Your contact number.."/><br>            
+            <input type="submit" id="submit" value="Submit"/>
+        </form>
+        <script src="cyfSite.js"></script>
+    </body>
+</html>
