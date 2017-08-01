@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 1em;
+}
+
+h1 { 
+	font-size: 2em;
+	margin: .5em 0;
+}
+
+h2 { 
+	font-size: 1.75em;
+	margin: .75em 0;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin: 1em 0;
+}
+
+
+h4 {
+	font-size: 1.25em;
+	margin: 1.25em 0;
+}
+
+h5 {
+	font-size: 1em;
+	margin: 1.5em 0;
+}
+
+h6 {
+	font-size: .75em;
+	margin: 1.75em 0;
+}
+h1, h2, h3, h4,
+h5, h6{
+	font-weight: bolder;
+}
+
+ul {
+	margin: 1em;
+	margin-left: 2em;
+}
+
+p {
+	margin: .5em 0;
+}
+
+blockquote {
+	margin: .5em 2em .5em 3em;
+}
+
+.main-container {
+	position: relative;
+}
+
+main {
+	top: 2em;
+}
+
+nav {
+	position: relative;
+	display: block;
+	z-index: 2;
+	background: transparent;
+}
+
+nav a{
+	text-decoration: none;
+	font-size: 1.4em;
+	background-color: #444;
+	color: white;
+	display: block;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	height: 1.6em;
+	padding: 0.1em;
+}
+
+nav a:hover {
+	transition: all .2s;
+	background: #ccc;
+	color: black;
+}
+
+nav .nav-icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav.closed a {
+	display: none;
+}
+
+nav.closed a:first-of-type {
+	display: block;
+}
+
+nav.closed .nav-icon {
+	display: block;
+}
+
+form > * {
+	display: block;
+}
+
+.form-entry > * {
+	display: block;
+	margin: .2em 0;
+}
+
+form button {
+	font-size: 1.2em;
+	background: blue;
+	padding: 0.2em 1em;
+	border: 1px solid transparent;
+	border-radius: .2em;
+}
+
+.errot-message {
+	font-weight: bolder;
+}
+
+.hide-element {
+	display: none;
+}
+
+footer {
+	height: 3em;
+	text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+	nav .nav-icon {
+		display: none;
+	}
+	nav a {
+		display: inline-block;
+		padding: 0.1em 1em;
+	}
+}
