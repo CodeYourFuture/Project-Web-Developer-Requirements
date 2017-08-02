@@ -1,37 +1,37 @@
-function validator(){
+function validator() {
     var fields = [];
     //var flag = true;
 
-    if (!validateName()){
-     fields.push('name')
-     //flag = false;
+    if (!validateName()) {
+        fields.push('name')
+        //flag = false;
     }
-     if (!validateEmail()){
-    fields.push('email')
-     //flag = false;
+    if (!validateEmail()) {
+        fields.push('email')
+        //flag = false;
     }
-    if(fields.length > 0){
-        alert("invalid field "+fields.join(" and "));
+    if (fields.length > 0) {
+        alert("invalid field " + fields.join(" and "));
         return false;
-    }else {
+    } else {
         return true;
     }
 }
-function validateName(){
+function validateName() {
     var value = document.getElementById("name").value;
-   
-    if(value == ""){
+
+    if (value == "") {
         return false;
-    }else{
+    } else {
         return true;
     }
 }
 
-function validateEmail(){
+function validateEmail() {
     var value = document.getElementById("email").value;
-    if(value == "" || value.indexOf("@") < 0){
+    if (value == "" || value.indexOf("@") < 0) {
         return false;
-    }else{
+    } else {
         return true;
     }
 }
