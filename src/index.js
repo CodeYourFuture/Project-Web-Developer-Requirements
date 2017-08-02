@@ -23,6 +23,8 @@ var submit = document.getElementById('submit');
 submit.addEventListener('click' , submition);
 var form = document.getElementById('form');
 
+
+
 function submition(event){
     if(contactName.value.length <= 0){
         event.preventDefault();
@@ -32,15 +34,77 @@ function submition(event){
         event.preventDefault();
         alert('please write a valid email')
     }else{
-     var Jason ={
-     contact :contactName.value,
-     emailAddress : email.value,
-     }
-        console.log(JSON.stringify(Jason))
+        var ContactData ={
+        contact :contactName.value,
+        emailAddress : email.value,
+        };
         form.style.color ='red'
         form.style.fontFamily = "Myriad"
         form.style.fontSize = '3em'
         form.innerHTML = "your form succesfuly submited!";
+        var jasonData = JSON.stringify(ContactData);
+        sendRequest(payload(jasonData));
 
     }
 }
+
+var newsTitle = document.querySelector('.news-title');
+var newsBody = document.querySelector('#body-text');
+var nextNews = document.getElementById('next-news')
+console.log(nextNews.innerHTML)
+
+console.log(newsBody.innerHTML)
+var request = new XMLHttpRequest();
+request.onreadystatechange = function (){
+  if (request.readyState === 4){
+    if (request.status === 200){
+        var allNews =JSON.parse(request.responseText);
+        nextNews.addEventListener('click' , changenews)
+        var i = 0;
+
+        function changenews(){
+        newsTitle.innerHTML = allNews[i].title;
+        newsBody.innerHTML = allNews[i].body;
+            if(i < allNews.length -1){
+                return i++
+            }else{
+               return  i = 0
+        }
+        }
+        console.log(allNews[i].body)
+        // newsTitle.innerHTML = allNews[i].title;
+        // newsBody.inn = allNews[i].body;
+
+
+    }else {
+        form.innerHTML ='there is an error please refresh the page '
+    }
+  }
+}
+
+console.log(request)
+function sendRequest(params){
+  var url = 'https://cyf-api.herokuapp.com/contact';
+  request.open('POST' , url , true);
+  request.setRequestHeader( 'Content-type' , 'application/json');
+  request.send(params);
+}
+
+function payload(message){
+  var jason = { "message" : message };
+  return JSON.stringify(jason);
+}
+
+
+
+var url = 'https://cyf-api.herokuapp.com/news';
+request.open('GET',url);
+request.setRequestHeader('Accepts' , 'application/json');
+request.send();
+
+
+
+
+
+// var newsTitle = document.querySelector('.news-title');
+// newsTitle.innerHTML = allNews[0].title

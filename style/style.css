@@ -132,3 +132,17 @@ footer{
 .tw{
     width: 3%;
 }
+
+.BTN{
+    font-size: 10em;
+    font-family: 'chunkfive','Times New Roman', Times, serif;
+    float: right;
+    position: relative;
+    top:-200px; 
+    right: 50px;
+    background-color:  #ada095;
+
+}
+.news{
+    width: 80%;
+}

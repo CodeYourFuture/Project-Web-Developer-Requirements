@@ -31,10 +31,16 @@
         <div>
             <h2 class="red_text text-center"><a href="#">click here </a> to download a PDF of our recent works</h2>
         </div>
-        <article>
+        <h2 class="red_text" id="hide" ><span  class="icon"><a href="#" >></a></span>show/ hide news items</h2>
+        <article id="news" >
             <h1 class="titles" >News</h1>
-            <h2 class="red_text" id="hide" ><span  class="icon"><a href="#" >></a></span>show/ hide news items</h2>
-            <p class="body-text" id="news" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt m</p>
+            
+            <div class="news">
+                <h4 class="news-title news">first news</h4>
+                <p class="body-text news" id="body-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt m</p>
+            </div>
+            <button id="next-news" class="BTN"> > </button>
+                
         </article>
         <article class="move">
             <h1 class="titles">more information</h1>
@@ -45,8 +51,8 @@
                 <input type="text" id="contactName" class="form" placeholder="your name">
                 <p>Contact email Address*:</p>
                 <input type="text" id="email"  class="form" placeholder="your email address">
-                <p>Contact phone Number:</p>
-                <input type="text" id="phone" class="form" placeholder="your phone number">
+                <!-- <p>Contact phone Number:</p>
+                <input type="text" id="phone" class="form" placeholder="your phone number"> -->
                 <button type="submit" class="button form" id="submit" >submit</button>
             </form>
         </article>
