@@ -50,8 +50,15 @@ function submition(event){
 
 var newsTitle = document.querySelector('.news-title');
 var newsBody = document.querySelector('#body-text');
-var nextNews = document.getElementById('next-news')
-console.log(nextNews.innerHTML)
+var nextNews = document.getElementById('next-news');
+var imagePlace = document.getElementById('image');
+var image = document.createElement('img');
+image.setAttribute('src' , './images/300.png')
+image.setAttribute('width','170px');
+image.setAttribute('height', ' 150px');
+imagePlace.appendChild(image);
+
+
 
 console.log(newsBody.innerHTML)
 var request = new XMLHttpRequest();
@@ -61,10 +68,11 @@ request.onreadystatechange = function (){
         var allNews =JSON.parse(request.responseText);
         nextNews.addEventListener('click' , changenews)
         var i = 0;
-
         function changenews(){
         newsTitle.innerHTML = allNews[i].title;
         newsBody.innerHTML = allNews[i].body;
+        image.src=allNews[i].image;
+
             if(i < allNews.length -1){
                 return i++
             }else{
@@ -72,8 +80,7 @@ request.onreadystatechange = function (){
         }
         }
         console.log(allNews[i].body)
-        // newsTitle.innerHTML = allNews[i].title;
-        // newsBody.inn = allNews[i].body;
+
 
 
     }else {
@@ -106,5 +113,3 @@ request.send();
 
 
 
-// var newsTitle = document.querySelector('.news-title');
-// newsTitle.innerHTML = allNews[0].title

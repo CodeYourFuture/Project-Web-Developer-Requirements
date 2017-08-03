@@ -144,5 +144,14 @@ footer{
 
 }
 .news{
-    width: 80%;
+    width: 60%;
+    position: relative;
+    top:-150px;
+    left:150px;
+}
+.image{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 5em;
 }
