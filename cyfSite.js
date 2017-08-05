@@ -1,3 +1,12 @@
+function hideNews() {
+    var x = document.getElementById('news');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
 function validator() {
     var fields = [];
     //var flag = true;
