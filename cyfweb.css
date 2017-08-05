@@ -1,0 +1,131 @@
+
+
+#main{
+    margin: 80px;
+    margin-top: 0px;
+    padding-top: 0px; 
+
+}
+body {
+    background-image:url("bgimg.jpg");
+    background-size: 100%;
+    color: white;
+   
+}
+html {
+    height: 100%
+}
+h1{
+    color : white;
+}
+
+h2{
+    color: red;
+    font-size: 50px;
+}
+h3{
+    color: white;
+    font-size: 30px;
+}
+h4 {
+    color: yellow;
+    font-size: 40px;
+}
+.nav ul{
+  background-color: #fff;
+  width: 200px;
+  padding: 2px;
+  margin: 0 auto;
+  overflow: auto;
+   }
+
+.nav li{
+  float:left;
+  list-style:none;
+  font-weight:bold;
+  border:1px solid ;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+ background-color: red;
+  border-bottom: none;
+ 
+}
+.nav a.active{
+  color: #fff;
+  cursor: active;
+  }
+.nav a{
+  display: block;
+  text-decoration: none;
+
+}
+li a:hover {
+    background-color: #005f5f;
+}
+
+ .newForm{
+    margin-left: 100px;
+    margin-right: 480px;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancelbtn,.subscripebtn{
+    float: left;
+    width: 50%;
+}
+.container {
+    padding: 16px;
+    padding-top: none;
+}
+.show{
+    padding :100px;
+    padding-bottom: 0px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+footer{
+    background-color: white;
+     text-align: center;
+}
+    p{
+        font-size: 15px;
+    }
+#hide:hover{
+    cursor: pointer;
+}
+.navigation{
+    overflow: hidden;
+}
+.image{
+    width: 200px;
+    height: 150px;
+    left: 5em;
+}
