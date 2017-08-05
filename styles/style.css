@@ -1,0 +1,203 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #000;
+	background: url(../assets/back.jpg) left top;
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	color: white;
+}
+
+h1 { 
+	font-size: 2em;
+	margin: .5em .5em;
+}
+
+h2 { 
+	font-size: 1.75em;
+	margin: .75em .5em;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin: 1em .5em;
+}
+
+
+h4 {
+	font-size: 1.25em;
+	margin: 1.25em .5em;
+}
+
+h5 {
+	font-size: 1em;
+	margin: 1.5em .5em;
+}
+
+h6 {
+	font-size: .75em;
+	margin: 1.75em .5em;
+}
+h1, h2, h3, h4,
+h5, h6{
+	font-weight: bolder;
+}
+
+ul {
+	margin: 1em;
+	margin-left: 2em;
+}
+
+p, address, label, input, textarea, button, .error-message {
+	margin: .5em .5em;
+}
+
+.error-message {
+	font-style: italic;
+	color: #ffaaaa;
+}
+
+blockquote {
+	margin: .5em 2em .5em 3em;
+}
+
+.main-container {
+	position: relative;
+}
+
+main {
+	top: 2em;
+}
+
+nav {
+	position: relative;
+	display: block;
+	z-index: 2;
+	background: transparent;
+	margin: .5em;
+}
+
+nav a{
+	text-decoration: none;
+	font-size: 1.4em;
+	background-color: #444;
+	color: white;
+	display: block;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	height: 1.6em;
+	padding: 0.1em;
+}
+
+nav a:hover {
+	transition: all .2s;
+	background: #ccc;
+	color: black;
+}
+
+nav .nav-icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav.closed a {
+	display: none;
+}
+
+nav.closed a:first-of-type {
+	display: block;
+}
+
+nav.closed .nav-icon {
+	display: block;
+}
+
+.news-content {
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+	justify-content: flex-start;
+}
+
+.news-article {
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	padding: .5em;
+}
+
+.article-img {
+	width: 100%;
+}
+
+.form-sent p {
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+form > * {
+	display: block;
+}
+
+.form-entry > * {
+	display: block;
+}
+
+form button {
+	font-size: 1.2em;
+	background: blue;
+	padding: 0.2em 1em;
+	border: 1px solid transparent;
+	border-radius: .2em;
+}
+
+.errot-message {
+	font-weight: bolder;
+}
+
+.hide-element {
+	display: none;
+}
+
+footer {
+	height: 3em;
+	text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+	nav .nav-icon {
+		display: none;
+	}
+	nav a {
+		display: inline-block;
+		padding: 0.1em 1em;
+	}
+	.news-article {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.news-article {
+		width: 33%;
+	}
+	html {
+		max-width: 960px;
+		margin: auto;
+	}
+}
