@@ -37,13 +37,9 @@
 
 			<section class="news">
 				<h3>News</h3>
-				<a href="#" class="hide-show-news"><< Hide news item</a>
-				<dir class="news-content">
-					<p>Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper.</p>
-					<blockquote class="quote">Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.</blockquote>
-				</dir>
+				<a href="#" class="hide-show-news"><< Hide news item</a>				<dir class="news-content"></dir>
 			</section>
-
+			<div class="form-sent"><p></p></div>
 			<form class="form">
 				<h3>More Information</h3>
 				<p>For more information about our products and services, please contact us using the form below</p>
@@ -62,6 +58,11 @@
 					<label for="phone">Contact phone number:</label>
 					<input type="text" name="phone" id="phone" size="50">
 					<div class="error-message" id="phone-worning"></div>
+				</div>
+				<div class="form-entry">
+					<label for="message">Write a short message</label>
+					<textarea name="message" id="message" cols="50" rows="10"></textarea>
+					<div class="error-message" id="message-worning"></div>
 				</div>
 				<button type="submit" id="submit-btn">Submit</button>
 			</form>
