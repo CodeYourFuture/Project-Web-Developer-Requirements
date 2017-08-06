@@ -35,7 +35,7 @@ a{
 
 .red{
     color: #d12f2f;
-    
+
 }
 .rtl{
     font-size: 1.3em;
@@ -59,7 +59,7 @@ ul{
 
 li{
     font-family: 'chunkfive','Times New Roman', Times, serif;
-    display:inline-block; 
+    display:inline-block;
     font-size: 1.3em;
     color: #323232;
 
@@ -125,9 +125,9 @@ footer{
 
  .social_medias{
     /* padding-left: 20em; */
-     margin-left: 40em; 
+     margin-left: 40em;
     width: 100%;
-} 
+}
 
 .tw{
     width: 3%;
@@ -138,7 +138,7 @@ footer{
     font-family: 'chunkfive','Times New Roman', Times, serif;
     float: right;
     position: relative;
-    top:-200px; 
+    top:-200px;
     right: 50px;
     background-color:  #ada095;
 

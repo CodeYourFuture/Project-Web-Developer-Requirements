@@ -11,13 +11,13 @@ function hideNews(event){
         hide.style.color = '#d12f2f';
     }
     event.preventDefault();
-    
+
 
 }
 var contactName = document.getElementById('contactName');
 var email = document.getElementById('email');
 var charcters = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
- 
+
 
 var submit = document.getElementById('submit');
 submit.addEventListener('click' , submition);
@@ -60,7 +60,6 @@ imagePlace.appendChild(image);
 
 
 
-console.log(newsBody.innerHTML)
 var request = new XMLHttpRequest();
 request.onreadystatechange = function (){
   if (request.readyState === 4){
@@ -69,18 +68,16 @@ request.onreadystatechange = function (){
         nextNews.addEventListener('click' , changenews)
         var i = 0;
         function changenews(){
-        newsTitle.innerHTML = allNews[i].title;
-        newsBody.innerHTML = allNews[i].body;
-        image.src=allNews[i].image;
-
+            newsTitle.innerHTML = allNews[i].title;
+            newsBody.innerHTML = allNews[i].body;
+            image.src=allNews[i].image || './images/300.png';
             if(i < allNews.length -1){
                 return i++
             }else{
                return  i = 0
+            }
+          
         }
-        }
-        console.log(allNews[i].body)
-
 
 
     }else {
@@ -88,15 +85,12 @@ request.onreadystatechange = function (){
     }
   }
 }
-
-console.log(request)
 function sendRequest(params){
-  var url = 'https://cyf-api.herokuapp.com/contact';
+  var url = 'https://cyf-api.herokuapp.com';
   request.open('POST' , url , true);
   request.setRequestHeader( 'Content-type' , 'application/json');
   request.send(params);
 }
-
 function payload(message){
   var jason = { "message" : message };
   return JSON.stringify(jason);
@@ -108,8 +102,3 @@ var url = 'https://cyf-api.herokuapp.com/news';
 request.open('GET',url);
 request.setRequestHeader('Accepts' , 'application/json');
 request.send();
-
-
-
-
-
