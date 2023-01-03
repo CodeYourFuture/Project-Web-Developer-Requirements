@@ -2,10 +2,10 @@
 
 ## Deadlines and commmunication
 
-- The deadline is 6th of August.
+- The deadline is set in Slack
 - Commit often, and update your Pull Request after each stage, and ask a mentor to review it.
-- We expect status updates on your progress on **Friday 28th of July** and **Thursday 3rd August** by email to **cyf.tests@gmail.com** (addressed to CodeYourFuture)
-    - Write a professional email addressing us (the client) asking for more details. Even though most of our communication is through Slack, Emails remain an important communication tool (especially when applying for jobs).
+- We expect status updates on your progress twice per week sent by email to your Programme Manager or Tech Ed leader (ask).
+- Write a professional email addressing us (the client) asking for more details. Even though most of our communication is through Slack, Emails remain an important communication tool (especially when applying for jobs).
 - Continue communicating on Slack as usual
 - *Important* - this page will be a starting point for future work including
   node.js/server side development.
@@ -50,7 +50,7 @@
 
     - We want the list of news to be populated dynamically from an API using an AJAX call. Once you have the first three requirements met, then please contact us to get the exact requirements for the API call.
 
-    - Contact us by email at cyf.tests@gmail.com NOT on Slack - with the subject of the email being “API requirements”
+    - Contact us by email NOT on Slack - with the subject of the email being “API requirements”
 
 ## General requirements and considerations
 Generally, you should build the web page in the way that you feel it should be built, however the following should be taken into consideration:
