@@ -1,0 +1,49 @@
+body {
+    background-image:url("images/Image.jpg");
+    background-size: 100% 100%;
+    color: white;
+    width: 600px;
+    margin:auto;
+}
+html {
+    height: 100%
+}
+ 
+
+h2{
+    color: red;
+}
+h4 {
+    color: yellow;
+}
+div p{
+    color: yellow;
+}
+section p {
+    color : red;
+}
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 232px
+}
+
+ol li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> CYF SITE </title>
+    <link rel="stylesheet" type="text/css" href="cyfSite.css">
+
+</head>
+
+<body>
+    <h1>CYF</h1>
+    <div class="navBar">
+        <ol>
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+        </ol>
+    </div>
+    <h2>About CYF</h2>
+    <h3>What We Do</h3>
+        <p>
+            Pellentesque habitant morbi tristique senectus et <br>
+            netus et malesuada fames ac turpis egestas. Vestibulum <br>
+            tortor quam, feugiat vitae, ultricies eget, tempor sit <br>
+            amet, ante. Donec eu libero sit amet quam egestas semper. <br>
+            Aenean ultricies mi vitae est. Mauris placerat eleifend <br>
+            leo.Quisque sit amet est et sapien ullamcorper pharetra.<br>
+            Vestibulum erat wisi, condimentum sed, commodo vitae, ornare <br>
+            sit amet, wisi.Aenean fermentum, elit eget tincidunt condimentum,<br> 
+            eros ipsum rutrum orci,sagittis tempus lacus enim ac dui. <br>
+            Donec non enim in turpis pulvinar facilisis. Ut felis.<br>
+            Praesent dapibus, neque id cursåus faucibus, tortor <br>
+            neque egestas augue, eu vulputate magna eros eu erat. <br>
+            Aliquam erat volutpat. Nam dui mi, tincidunt quis, <br>
+            accumsan porttitor, facilisis luctus, metus<br>
+        </p>
+    <p>Cyf is </p>
+    <h4>Our focus</h4>
+    <section>
+        <ul>
+            <li>Interactive</li>
+            <li>Mobile</li>
+            <li>Technology</li>
+        </ul>
+    </section>
+    <div>
+
+    <a href="../images/image.jpg" download>
+    click here to download a PDF of our recent work
+    </a>
+
+    </div>
+    <section>
+    <h3>News</h3>
+    <p onclick="hideNews()"> >Show/Hide news item</p>
+     <div id="news">
+            ante. Donec eu libero sit amet quam egestas semper. <br>
+            Aenean ultricies mi vitae est. Mauris placerat eleifend <br>
+            leo.Quisque sit amet est et sapien ullamcorper pharetra.<br>
+            Vestibulum erat wisi, condimentum sed, commodo vitae, ornare <br>
+            sit amet, wisi.Aenean fermentum, elit eget tincidunt condimentum,<br> 
+            eros ipsum rutrum orci,sagittis tempus lacus enim ac dui. <br>
+            Donec non enim in turpis pulvinar facilisis. Ut felis.<br>
+            Praesent dapibus, neque id cursåus faucibus, tortor <br>
+            neque egestas augue, eu vulputate magna eros eu erat. <br>
+            Aliquam erat volutpat. Nam dui mi, tincidunt quis, <br>
+            accumsan porttitor, facilisis luctus, metus<br>
+    </div>
+    </section>
+
+    <h3>More Information</h3>
+    <p>For more information about our about our products and services, please contact us using </br> the form below </p>
+    <p>Items marked * are required fields</p>
+    <form id="form" onsubmit="validator()">
+        <label for="name">contact name *</label><br>
+            <input type="text" id="name" name="contact_name" placeholder=" Your name.."/><br>
+        <label for="email">contact email *</label><br>
+            <input type="text" id="email" name="contact_email" placeholder="Your email.." /><br>
+        <label for="contact">contact phone number</label><br>
+            <input type="text" id="email" name="contact_email" placeholder=" Your contact number.."/><br>            
+            <input type="submit" id="submit" value="Submit"/>
+    </form>
+        <script src="cyfSite.js "></script>
+    </body>
+</html>
