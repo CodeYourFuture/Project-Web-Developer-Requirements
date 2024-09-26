@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 Layout</title>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			
+			<header>
+				<h1></h1>
+				<nav>
+					<ul>
+						<li><a href="index.html" class="current">Main</a></li>
+						<li><a href="#news_start">News</a></li>
+						<li><a href="#message_form">Message form</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section class="news">
+				<h4 id="news_start">NEWS</h4>
+				<article> <!-- This is main News and should be always up to screen -->
+					<figure>
+						<img src="images/news1.jpg" alt="Particulate matter from brakes and tyres has strong links to cardiopulmonary toxicity, says Frank Kelly." 
+						width="290" height="150"/>
+						<figcaption>Particulate matter from brakes and tyres has strong links to cardiopulmonary 
+							toxicity, says Frank Kelly.</figcaption>
+					</figure>
+				<hgroup> 
+					<h2>Electric cars are not the answer to air pollution, says top UK adviser</h2>
+					<h3>Prof Frank Kelly says fewer not cleaner vehicles are needed, plus more cycling 
+							and walking and better transit systems</h3>
+				</hgroup>
+					<p>Cars must be driven out of cities to tackle the UK’s air pollution crisis, not just 
+						replaced with electric vehicles, according to the UK government’s top adviser.
+					Prof Frank Kelly said that while electric vehicles emit no exhaust fumes, they still 
+					produce large amounts of tiny pollution particles from brake and tyre dust, for which 
+					the government already accepts there is no safe limit.</p>
+				</article>
+
+				<a href="#"><input type="submit" value="Show/Hide News" id="submit1"/></a>
+
+				<article id="news" class="sub-article"><!-- These are additional News and should be hidden from screen by click on button -->
+					<figure>
+						<img src="images/news2.jpg" alt="The open letter calls on Labour to ‘respond with clarity, humanity and solidarity’ on the issue of immigration." 
+						width="290" height="150"/>
+						<figcaption>The open letter calls on Labour to ‘respond with clarity, humanity and solidarity’ 
+							on the issue of immigration.</figcaption>
+					</figure>
+				<hgroup>
+					<h2>Labour MPs ask Corbyn to commit to free movement post-Brexit</h2>
+					<h3>David Lammy, Clive Lewis and trade unionists sign open letter saying migrants are not 
+							to blame for falling wages</h3>
+				</hgroup>
+					<p>A band of Labour MPs and trade unionists are calling for Jeremy Corbyn to commit 
+						to defending free movement when the UK leaves the EU, highlighting the party’s split over 
+						the issue.
+					<br/><br/>
+					Clive Lewis, an ally of Corbyn, has joined David Lammy and Geraint David in signing a open letter in 
+					support of letting UK and other EU citizens continue to live and work across the bloc without barriers.</p>
+				</article>
+
+				<article class="sub-article">
+					<figure>
+						<img src="images/news3.jpg" alt="Sir James Munby said the country would have ‘blood on its hands’ if the girl was released with no proper care plan." 
+						width="290" height="150"/>
+						<figcaption>Sir James Munby said the country would have ‘blood on its hands’ 
+							if the girl was released with no proper care plan.</figcaption>
+					</figure>
+				<hgroup>
+					<h2>NHS to assess three hospitals to determine care for suicidal girl</h2>
+					<h3>Officials to evaluate whether beds identified in three hospitals could provide 
+							right care for girl believed to be at suicide risk</h3>
+				</hgroup>
+					<p>NHS officials are to spend the day assessing whether three hospitals can provide 
+						proper care for a girl who is believed to be at serious risk of taking her own 
+						life when she is released from youth custody in 10 days’ time, and for whom no 
+						bed could be found.
+					<br/><br/>
+					Her urgent case was highlighted by the UK’s most senior family judge on Thursday. 
+					Sir James Munby said the country would have “blood on its hands” were she released 
+					with no proper plan in place for her ongoing care, and expressed his frustration at 
+					not being able to safeguard her.
+					<br/><br/>
+					The girl, for legal reasons named only as X, has made a series of “determined attempts” 
+					on her own life while in custody, and her carers had said they expected to hear she had 
+					made another immediately after her release. With no secure bed available, she was due to 
+					be released to the community in 10 days.</p>
+				</article>    
+			</section>
+
+			<aside>
+				<section class="popular-resourses">
+					<h2>Popular Resourses</h2>
+					<a href="#">Resourse #1</a>
+					<a href="#">Resourse #2</a>
+					<a href="#">Resourse #3</a>
+				</section>
+				
+				<section class="contact-details">
+					<h2>Contact</h2>
+					<p>Label Name<br />
+						First line of address<br />
+						Second line of address<br />
+						Third line of address</p>
+				</section>
+			</aside>
+
+			<section id="message_form" class="form">
+				<form id="form">
+					<fieldset>
+						<legend>Message Form</legend>
+						<label for="name">Username: </label><input type="text" id ="name" placeholder="Username" maxlength="30"/>
+						<label for="email">Email: </label><input type="text" id="email" placeholder="Email" maxlength="50"/>
+                		<label for="message">Message: </label>
+						<textarea id="message" placeholder="Enter your message..." onkeyup="updateWordCount()"></textarea>
+                		<br /><br />
+						<span id="counter">Word count: 0</span>
+						<input type="submit" value="Submit form" id="submit"/>
+					</fieldset>
+				</form>
+			</section>
+			
+			<footer>
+				&copy; 2017 UK News
+			</footer>
+
+		</div><!-- .wrapper -->
+
+		<script src="js/main.js" defer></script>
+
+	</body>
+</html>
